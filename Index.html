@@ -1,5 +1,101 @@
-<p><!DOCTYPE html> <html lang=&quot;en&quot;> <head>  <meta charset=&quot;UTF-8&quot;>  <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>  <title>Your HTML Document</title> </head> <body> <font face=&quot;times new roman&quot;>  <h1 align=&quot;center&quot;><font color=&quot;red&quot;>HTML by Washim</font></h1>  <p>  Hi there, this is <b>Washim</b>. I study at <u>DKMHC</u> <del>DMC</del>. </p>    <mark>Highlighted text</mark> and <strong>strong text</strong>.  <small>Small text</small> and <big>big text</big>.  <sub>Subscript</sub> and <sup>superscript</sup>.  <blink>Blinking text</blink>.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MKS Animation</title>
+  <style>
+    body {
+      font-family: 'times new roman', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+      overflow: hidden;
+    }
 
-<p> <q>Quoted text</q>.</p>
+    .MKS {
+      font-size: 1.8em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 9s ease-in-out;
+      display: inline-block;
+      margin-bottom: 20px; /* Added space after "English" */
+    }
 
-<p> <hr>  <table border=&quot;1&quot; width=&quot;100%&quot; color=&quot;red&quot;>  <caption>Data</caption>  <tr bgcolor=&quot;yellow&quot;>  <th height=&quot;60%&quot;>Name</th>  <th width=&quot;40%&quot;>Rule</th>  </tr>  <tr>  <td align=&quot;center&quot;><a href=&quot;https://m.facebook.com/profile.php/?id=100083323081974&amp;name=xhp_nt__fb__action__open_user&quot; >Washim</a></td>  <td align=&quot;center&quot;>3032</td>  </tr>  <tr>  <td align=&quot;center&quot;><a href=&quot;https://www.facebook.com/profile.php?id=100082242285490&quot;>Tonni</a></td>  <td align=&quot;center&quot;>2124</td>  </tr>  <tr>  <td align=&quot;center&quot;><a href=&quot;https://www.facebook.com/profile.php?id=100086466764679&amp;mibextid=ZbWKwL&quot;>Md Zahidul Islam Zahid  </a></td>  <td align=&quot;center&quot;>3079</td>  </tr>  </table>  </font>    <font face=&quot;kalpurush&quot;>  <ol type=&quot;1&quot;><b><u>Boys:</u>:</b>:  <li>&#2451;&#2479;&#2492;&#2494;&#2488;&#2495;&#2478;</li>  <li>&#2460;&#2494;&#2489;&#2495;&#2470;&#2497;&#2482;</li>  <li>&#2480;&#2494;&#2453;&#2495;&#2476;</li>  <li>&#2438;&#2486;&#2495;&#2453;</li>  <li>&#2455;&#2507;&#2474;&#2494;&#2482;</li>  <li>&#2438;&#2486;&#2480;&#2494;&#2475;</li>  </ol>  <ul type=&quot;circle&quot;><b><u>Girl:</u>:</b>:  <li>&#2454;&#2494;&#2470;&#2495;&#2460;&#2494;</li>  <li>&#2486;&#2494;&#2453;&#2495;&#2482;&#2494;</li>  <li>&#2478;&#2495;&#2482;&#2495;</li>  <li>&#2488;&#2494;&#2472;&#2460;&#2495;&#2470;&#2494;</li>  <li>&#2439;&#2477;&#2494;</li>  <li>&#2488;&#2497;&#2478;&#2494;&#2439;&#2479;&#2492;&#2494;</li>  </ul> </font> </body> </html></p>
+    .MKS span {
+      display: inline-block;
+      color: transparent;
+      background: linear-gradient(to right, rgb(255, 165, 0), rgb(255, 255, 0));
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: glow 3s linear infinite alternate;
+    }
+
+    .rakib:hover span {
+      transform: scale(1.1);
+    }
+
+    .washim {
+      font-size: 1.4em;
+      color: black;
+    }
+    
+    
+    
+    
+    @keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  /* existing styles */
+  background: linear-gradient(to right, rgb(0, 0, 255), rgb(255, 0, 255), rgb(255, 0, 0));
+  background-size: 200% 200%;
+  animation: gradientChange 4s ease infinite;
+}
+    
+    
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 1px rgb(255, 255, 0);
+      }
+      100% {
+        text-shadow: 0 0 10px rgb(0, 0, 255), 0 0 30px rgb(255, 0, 255), 0 0 40px rgb(255, 0, 0), 0 0 50px rgb(0, 0, 255), 0 0 60px rgb(255, 0, 255), 0 0 70px rgb(255, 0, 0), 0 0 80px rgb(0, 0, 255);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="MKS">
+    <span>E</span>
+    <span>N </span>
+    <span>G</span>
+    <span>L</span>
+    <span>I</span>
+    <span>S</span>
+    <span>H </span>
+    <span>&nbsp;</span>
+    <span>W</span>
+    <span>I</span>
+    <span>N</span>
+    <span>N</span>
+    <span>E</span>
+    <span>R</span>
+    <span>🏆</span>
+  </div>
+  <div class="washim">
+    <span>With Manik</span>
+    <span>Sir</span>
+    
+    
